@@ -1,0 +1,18 @@
+{
+    "name": "Yotsugi",
+    "version": "0.0.1",
+    "description": "Discord Bot",
+    "author": "TTBB",
+    "license": "AGPL-3.0",
+    "dependencies": {
+        "dotenv-safe": "^6.0.0",
+        "eris": "^0.8.6",
+        "winston": "^2.4.2"
+    },
+    "main": "Index.js",
+    "repository": "git+https://github.com/TTBB-Khai/Yotsugi.git",
+    "private": false,
+    "devDependencies": {
+        "bin-version-check": "^3.0.0"
+    }
+}
