@@ -1,5 +1,6 @@
 # Yotsugi
-For Rei
+For Rei.
+This is a lightweight version of Yotsugi.
 
 ## Required:
 * To install Node.js, click here:
