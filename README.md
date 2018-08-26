@@ -12,7 +12,7 @@ This is a lightweight version of Yotsugi.
 ## Installation Instructions:
 ```bash
 $ git clone https://github.com/TTBB-Khai/Yotsugi-light-
-$ cd Yotsugi
+$ cd Yotsugi-light-
 $ npm i
 ```
 
