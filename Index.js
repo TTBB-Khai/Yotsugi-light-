@@ -26,11 +26,11 @@ TTBT = new Eris.CommandClient(process.env['CLIENT_TOKEN'], {}, {
 	game_name: process.env['CLIENT_GAME_NAME']
 });
 
-require('./commands/!meta/loader');
-require('./commands/general/!meta/loader');
-require('./commands/moderator/!meta/loader');
-require('./commands/fun/!meta/loader');
-require('./commands/utility/!meta/loader');
+require(path.join(process.cwd(), 'commands', '!meta', 'loader'));
+require(path.join(process.cwd(), 'commands', 'general', '!meta', 'loader'));
+require(path.join(process.cwd(), 'commands', 'moderator', '!meta', 'loader'));
+require(path.join(process.cwd(), 'commands', 'fun', '!meta', 'loader'));
+require(path.join(process.cwd(), 'commands', 'utility', '!meta', 'loader'));
 
 TTBT.on("ready", () => { console.log("Ready!") })
 TTBT.on('error', logger.info);
