@@ -1,7 +1,7 @@
 //'use strict';
 
 const path = require('path');
-const { delay: wait } = require(path.join(process.cwd(), 'Utils', 'Delay.js'));
+const { delay: wait } = require(path.join(process.cwd(), 'utils', 'Delay.js'));
 
 TTBT.registerCommand("banRoulette", (msg, args) => {
 	
