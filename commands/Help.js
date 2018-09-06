@@ -21,10 +21,6 @@ var helpCommand = TTBT.registerCommand("help", (msg) => {
 				+ "<unban - Unbans a user in the current server>\n"
 				+ "<kick - Kicks a user in the current server>\n\n"
 				+ " * Fun *\n"
-				+ "<roll - Rolls a 6 sided die>\n"
-				+ "<flip - Flips a coin>\n"
-				+ "<drink - Gives you or a mentioned user a random drink>\n"
-				+ "<8ball - Ask me a yes or no question>\n"
 				+ "<who - Picks a random user in the server based on a given question>\n"
 				+ "<clap - Adds :clap: between every word>\n"
 				+ "<karaoke - Starts a karaoke session>\n"
@@ -254,86 +250,6 @@ helpCommand.registerSubcommand("ping", (msg) => {
 		cooldown: 3000,
 		caseInsensitive: true,
 		cooldownMessage: "Slow down buddy! This command has a **3 second cooldown!**",
-		requirements: {
-			"manageMessages": true
-		}
-	}
-);
-
-helpCommand.registerSubcommand("roll", (msg) => {
-	return "```Markdown\n"
-			+ "**Roll**\n\n"
-			+ " * Description *\n"
-			+ "Rolls a 6 sided die.\n"
-			+ " * Arguments *\n"
-			+ "<none>\n"
-			+ " * Examples *\n"
-			+ process.env['CLIENT_PREFIX'] + "roll\n"
-			+ "```";
-},	{
-		caseInsensitive: true,
-		cooldown: 3000,
-		cooldownMessage: "Slow down! This command has a **3 second cooldown!**",
-		requirements: {
-			"manageMessages": true
-		}
-	}
-);
-
-helpCommand.registerSubcommand("flip", (msg) => {
-	return "```Markdown\n"
-			+ "**Flip**\n\n"
-			+ " * Description *\n"
-			+ "Flips a coin\n"
-			+ " * Arguments *\n"
-			+ "<none>\n"
-			+ " * Examples *\n"
-			+ process.env['CLIENT_PREFIX'] + "flip\n"
-			+ "```";
-},	{
-		caseInsensitive: true,
-		cooldown: 3000,
-		cooldownMessage: "Slow down! This command has a **3 second cooldown!**",
-		requirements: {
-			"manageMessages": true
-		}
-	}
-);
-
-helpCommand.registerSubcommand("drink", (msg) => {
-	return "```Markdown\n"
-			+ "**Drink**\n\n"
-			+ " * Description *\n"
-			+ "Gives you or a mentioned user a random drink.\n"
-			+ " * Arguments *\n"
-			+ "<mentioned user> OR <none>\n"
-			+ " * Examples *\n"
-			+ process.env['CLIENT_PREFIX'] + "drink @TTBT OR " + process.env['CLIENT_PREFIX'] + "drink\n"
-			+ "```";
-},	{
-		caseInsensitive: true,
-		cooldown: 3000,
-		cooldownMessage: "Slow down! This command has a **3 second cooldown!**",
-		requirements: {
-			"manageMessages": true
-		}
-	}
-);
-
-helpCommand.registerSubcommand("8ball", (msg) => {
-	return "```Markdown\n"
-			+ "**8ball**\n\n"
-			+ " * Description *\n"
-			+ "Ask me a yes or no question and receive a random answer.\n"
-			+ " * Arguments *\n"
-			+ "<question>\n"
-			+ " * Examples *\n"
-			+ process.env['CLIENT_PREFIX'] + "8ball is TTBB the greatest of all time\n"
-			+ "```";
-},	{
-		caseInsensitive: true,
-		cooldown: 3000,
-		cooldownMessage: "Slow down! This command has a **3 second cooldown!**",
 		requirements: {
 			"manageMessages": true
 		}
