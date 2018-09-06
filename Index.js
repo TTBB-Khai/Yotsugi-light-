@@ -1,20 +1,12 @@
 //'use strict';
 
 const Eris = require("eris");
-const winston = require('winston');
 const path = require('path');
 
 require('dotenv-safe').config({
   path: path.join(process.cwd(), '.env'),
   allowEmptyValues: true
 })
-
-const logger = new (winston.Logger)({
-  transports: [
-    new winston.transports.Console(),
-    new winston.transports.File({ filename: 'yotsugi.log' })
-  ]
-});
 
 TTBT = new Eris.CommandClient(process.env['CLIENT_TOKEN'], {}, {
 	defaultHelpCommand: false,	// KEEP THIS FALSE
@@ -33,6 +25,5 @@ require(path.join(process.cwd(), 'commands', 'fun', '!meta', 'loader'));
 require(path.join(process.cwd(), 'commands', 'utility', '!meta', 'loader'));
 
 TTBT.on("ready", () => { console.log("Ready!") })
-TTBT.on('error', logger.info);
 
 TTBT.connect();

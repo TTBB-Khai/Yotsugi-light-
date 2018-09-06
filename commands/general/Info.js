@@ -8,9 +8,9 @@ TTBT.registerCommand("info", (msg) => {
 			+ "- Bot Owner: " + process.env['CLIENT_OWNER'] + "\n"
 			+ "- Bot Owner ID: " + process.env['CLIENT_OWNERID'] + "\n\n"
 			+ "- Bot Description: " + process.env['CLIENT_DESCRIPTION'] + "\n"
-			+ "- Language: node.js\n"
-			+ "- Library: Eris.js by abalabahaha\n"
-			+ "- Version: 0.0.1 (ALPHA) \n\n"
+			+ "- Language: Javascript\n"
+			+ "- Library: Eris by abalabahaha\n"
+			+ "- Version: 1.0.0 \n\n"
 			+ "- Guilds: " + TTBT.guilds.size + "\n"
 			+ "- Channels: " + Object.keys(TTBT.channelGuildMap).length + "\n"
 			+ "- Users: " + TTBT.users.size +"\n```";
