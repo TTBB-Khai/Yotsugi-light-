@@ -10,10 +10,7 @@ TTBT.registerCommand("info", (msg) => {
 			+ "- Bot Description: " + process.env['CLIENT_DESCRIPTION'] + "\n"
 			+ "- Language: Javascript\n"
 			+ "- Library: Eris by abalabahaha\n"
-			+ "- Version: 1.0.0 \n\n"
-			+ "- Guilds: " + TTBT.guilds.size + "\n"
-			+ "- Channels: " + Object.keys(TTBT.channelGuildMap).length + "\n"
-			+ "- Users: " + TTBT.users.size +"\n```";
+			+ "- Version: 1.0.0 \n\n ```";
 },	{
 		caseInsensitive: true,
 		cooldown: 3000,

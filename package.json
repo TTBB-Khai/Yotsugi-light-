@@ -6,7 +6,9 @@
     "license": "AGPL-3.0",
     "dependencies": {
         "dotenv-safe": "^6.0.0",
-        "eris": "^0.8.6"
+        "eris": "^0.8.6",
+        "moment": "^2.22.2",
+        "moment-duration-format": "^2.2.2"
     },
     "main": "Index.js",
     "repository": "git+https://github.com/TTBB-Khai/Yotsugi.git",
