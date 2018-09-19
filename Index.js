@@ -18,6 +18,9 @@ const maxShards = processShards * processCount;
 TTBT = new Eris.CommandClient(process.env['CLIENT_TOKEN'], 
 	{
 		autoreconnect: true,
+		getAllUsers: true,
+		disableEveryone: true,
+		disableEvents: true,
 		maxShards: maxShards,
 		firstShardID: firstShardID,
 		lastShardID: lastShardID
