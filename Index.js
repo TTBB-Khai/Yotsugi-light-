@@ -8,9 +8,9 @@ require('dotenv-safe').config({
   allowEmptyValues: true
 })
 
-const processCount = parseInt(process.env['SHARDS_PROCESSES'], 10);
-const processID = parseInt(process.env['SHARDS_NODE_INSTANCE'], 10) % processCount;
-const processShards = parseInt(process.env['SHARDS_PER_PROCESS'] || 1, 10);
+const processCount = parseInt(process.env['SHARDS_PROCESSES'], 10) | 1;
+const processID = parseInt(process.env['SHARDS_NODE_INSTANCE'], 10) % processCount | 1;
+const processShards = parseInt(process.env['SHARDS_PER_PROCESS'] || 1, 10) | 1;
 const firstShardID = processID * processShards;
 const lastShardID = firstShardID + processShards - 1;
 const maxShards = processShards * processCount;
